@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/beauty_icon"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_parlour"
+            android:icon="@drawable/parlor"
+            android:title="@string/parlor" />
+        <item
+            android:id="@+id/nav_wallet"
+            android:icon="@drawable/wallet_black"
+            android:title="@string/wallet"
+            android:visible="false"/>
+
+        <item
+            android:id="@+id/nav_booking"
+            android:icon="@drawable/spa_black"
+            android:title="@string/booking"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings_black"
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/info_black"
+            android:title="@string/about_us" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/remove_black"
+            android:title="@string/logout"
+            android:visible="false"/>
+
+
+    </group>
+
+</menu>

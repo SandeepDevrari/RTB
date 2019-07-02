@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="8dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="8dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <in.co.halexo.angry.righttobeauty.circular_image.CircularImageView
+            android:id="@+id/parlor_image"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/parlor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="8dp" />
+
+        <in.co.halexo.angry.righttobeauty.custom_textview.sCustomTextViewMontez
+            android:id="@+id/parlor_name_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:scrollbars="vertical"
+            android:text="@string/parlor"
+            android:textAlignment="viewStart"
+            android:textColor="@color/green"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/parlor_address_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@id/parlor_image"
+            app:layout_constraintTop_toTopOf="@id/parlor_image"
+            app:layout_constraintVertical_chainStyle="packed"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:gravity="start" />
+
+        <in.co.halexo.angry.righttobeauty.custom_textview.sCustomTextViewRaleway
+            android:id="@+id/parlor_address_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:paddingStart="10dp"
+            android:scrollbars="vertical"
+            android:text="@string/user_reviews"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/parlor_image"
+            app:layout_constraintEnd_toEndOf="@+id/parlor_name_text"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/parlor_name_text"
+            app:layout_constraintTop_toBottomOf="@id/parlor_name_text"
+            android:paddingLeft="10dp"
+            android:gravity="start" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
